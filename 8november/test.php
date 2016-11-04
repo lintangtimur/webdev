@@ -2,7 +2,7 @@
 /*
   DRY => Dont Repeat Yourself
 */
-include 'assets/config/connection.php';
+include 'config/connection.php';
 $sql = "show columns from ktp";
 $result = $mysqli->query($sql);
 $kolom = array();
@@ -61,6 +61,6 @@ function print_header_table($kolom){
   echo "<td>OPTION</></tr>";
 }
 
-// insertTable($mysqli, $myKol, $myData);
+insertTable($mysqli, $myKol, $myData);
 showTable($mysqli, $kolom);
  ?>
