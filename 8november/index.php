@@ -4,12 +4,12 @@
   <head>
     <meta charset="utf-8">
     <title>Input KTP</title>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
   </head>
   <body>
     <style type="text/css">
-      
+
     </style>
     <div class="container">
       <div class="page-header">
@@ -122,8 +122,8 @@
 <div class="container">
   <div id="disini" class="table-responsive"></div>
 </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
     <script>
     $(document).ready(function(){
       $('#formKTP').submit(function(event){

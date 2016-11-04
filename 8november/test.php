@@ -2,7 +2,7 @@
 /*
   DRY => Dont Repeat Yourself
 */
-include 'config/connection.php';
+include 'assets/config/connection.php';
 $sql = "show columns from ktp";
 $result = $mysqli->query($sql);
 $kolom = array();
