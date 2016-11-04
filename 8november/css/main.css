@@ -1,0 +1,72 @@
+.navbar{
+  margin-bottom: 0 !important;
+}
+body{
+  background: rgb(11,68,91) !important;
+  color: #f7f7f7 !important;
+  font-family: sans-serif !important;
+}
+p{
+  font-size: 16px !important;
+  color: #cdcdcd !important;
+}
+.jumbotron{
+  background: rgb(240, 79, 79) !important;
+  color: white;
+  text-align: center;
+  padding: 100px !important;
+}
+.btn-primary{
+  color: rgb(224, 70, 21);
+  background-color: rgb(41,43,56) !important;
+  border-color: rgb(41,43,56) !important;
+  margin-bottom: 5px !important;
+  border-radius: 0 !important;
+}
+.glyphicon-fire{
+  color: rgb(224, 70, 21);
+}
+.btn-primary:hover{
+  color: rgb(41,43,56) !important;
+  background-color: white !important;
+  border-color: white;
+}
+.navbar-inverse{
+  background: rgb(11,68,91) !important;
+  border: 0 !important;
+}
+.navbar-inverse .navbar-nav li a{
+  color: #f7f7f7 !important;
+  font-size: 16px;
+}
+.navbar-inverse .navbar-nav li a:hover{
+  background: #f7f7f7 !important;
+  color: rgb(41,43,56) !important;
+}
+.dropdown-menu{
+  background: #2e2f31 !important;
+  border-radius: 0 !important;
+  border: 0 !important;
+}
+.dropdown-menu li a{
+  padding: 10px !important;
+}
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover{
+  background: #2c463c;
+}
+.call-to-action{
+  text-align: center;
+}
+.call-to-action p{
+  margin-bottom: 30px;
+  font-family: sans-serif;
+}
+.glyphicon-large{
+  font-size: 100px;
+}
+.fa-github{
+  color: black !important;
+}
+.fa:hover{
+  color: white !important;
+}
