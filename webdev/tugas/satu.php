@@ -1,4 +1,5 @@
 <?php
+//Cek User sudah login apa belum
 session_start();
 if(isset($_SESSION['user'])){
   if(!$_SESSION['user']=="1"){
@@ -16,14 +17,15 @@ if(isset($_SESSION['user'])){
   </head>
   <body>
     <?php
+    //Cek apakah variable ID sudah ada (?)
     $id = isset($_GET['id']) ? $_GET['id'] : 0;
+    $decid = base64_decode($id);
     $mysqli = new mysqli("localhost","root","","8nov");
-    $sql = "select * from asd where id=$id";
+    $sql = "select * from asd where id='$decid'";
     $result = $mysqli->query($sql);
     while ($row = $result->fetch_object()) {
       echo '<img src="data:img/jpeg;base64,'.base64_encode($row->gambar).'"width="290" height="290"/>';
     }
-
      ?>
      <br>
     <a href="satu.php">SATU</a>
@@ -37,14 +39,16 @@ if(isset($_SESSION['user'])){
          <th>LINK</th>
        </tr>
        <?php
+
+       //Iterate data dari table 'asd'
          $mysqli = new mysqli("localhost","root","","8nov");
          $sql = "select * from asd";
          $result = $mysqli->query($sql);
          while($row = $result->fetch_object()){
-          //  echo "<a href='satu.php?id=$row->id'>$row->nama</a><br/>";
+          $id64 = base64_encode($row->id);
           echo "<tr>
                 <td>$row->nama</td>
-                <td><a href='satu.php?id=$row->id' data-id='$row->id'>SHOW IMAGE</a></td>
+                <td><a href='satu.php?id=$id64'>SHOW IMAGE</a></td>
           </tr>";
          }
         ?>
