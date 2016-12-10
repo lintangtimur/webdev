@@ -1,0 +1,49 @@
+body{
+  background: #333333;
+  background: url('../img/bg.jpg');
+  background-size: cover;
+  /*font-family: Open Sans;*/
+}
+.center-block{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.container-login{
+  min-height: 0;
+  width: 480px;
+  margin-top: 40px;
+  padding: 0;
+}
+.tab-content{
+  background: #ffffff;
+  padding: 10px 30px;
+  border: medium none;
+  margin-top: -1px;
+}
+.tab-content > .active{
+  display: block;
+}
+.fade.in{
+  opacity: 1;
+}
+.container-login h2{
+  color: #ea533f;
+
+}
+.container-login button{
+  width: 100%;
+  border-radius: 0;
+  background-color: #ea533f;
+  border-color: #ea533f;
+}
+.container-login button:hover, button:focus{
+  background: #de2f18;
+  border-color: #be2815;
+}
+.form-control{
+  border-radius: 0;
+}
+.left-col{
+  display: none;
+}
